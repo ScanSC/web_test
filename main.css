@@ -1,50 +1,93 @@
-/* html, body {
-    margin: 0;
-    padding: 0;
-} */
+html, body {
+    background-image: url("images/space.jpg");
+}
 
 h1, h2 {
     text-align: center;
 }
 
-#menu_box {
+#title {
     position: absolute;
+    padding: 2rem;
+    width: max-content;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60rem;
-    z-index: 2;
-}
-
-#name {
-    background-color: rgb(135, 152, 245);
-    border-bottom: solid white 0.4rem;
-}
-
-#who, #proj {
+    border: solid white 0.2rem;
+    border-radius: 2rem;
+    color: white;
     text-align: center;
-    transition: all 0.2s;
-    font-size: larger;
-    background-color: rgb(135, 152, 245);
 }
 
-#who {
+/* top left buttons */
+
+#bp_contact {
+    position: absolute;
+    background-color: transparent;
+    border: solid white 0.15rem;
+    border-radius: 0px;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    right: 10rem;
+}
+
+#bp_contact:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#bp_contact:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* contact oc */
+
+#contact_oc {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+#contact_oc_title {
+    background-color: rgba(255, 255, 255, 0.4);
     border-right: solid white 0.2rem;
 }
 
-#proj {
-    border-left: solid white 0.2rem;
+#contact_oc_body {
+    border-right: solid white 0.2rem;
+    padding-top: 5rem;
 }
 
-#who:hover {
-    transform-origin: top right;
-    transform: scaleX(1.1) scaleY(1.1);
+#oc_git {
+    padding-top: 3rem;
 }
 
-#proj:hover {
-    transform-origin: top left;
-    transform: scaleX(1.1) scaleY(1.1);
+.bp_copy {
+    background-color: transparent;
+    color: white;
+    border: solid white 0.15rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
+
+.bp_copy:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.bp_copy:active {
+    border-radius: 0px;
+}
+
+#bp_copy_mail {
+    position: absolute;
+    transform: translate(20.5rem, -2.1rem);
+}
+
+#bp_copy_git {
+    position: absolute;
+    transform: translate(20.5rem, -2.1rem);
+}
+
+/* bop cat */
 
 #bop {
     position: fixed;
